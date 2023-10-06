@@ -405,7 +405,7 @@ section .clients {
 .clients  .clients-content .client{
   width: 100%;
   box-shadow: -10px 7px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 10px;
   background-color:#ffffff;
   height: 180px;
@@ -444,15 +444,16 @@ section .clients {
   }
   .clients  .clients-content{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    gap: 35px;
-    width: 70%;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    row-gap: 30px;
+    width: 85%;
     margin: 0;
+
     }
 
     .clients  .clients-content .client{
-      width: 90%;
-      margin-left: 5%;
+      margin-left: 10%;
+      width: 100%;
 
  }
  .clients .clients-content p {
@@ -462,32 +463,10 @@ section .clients {
 }
 }
 
-    @media (min-width: 450px) and (max-width: 768px) {
-      .clients {
-        width: 100%;
-        margin: 0;
-      }
-      .clients  .clients-content{
-        width: 70%;
-      }
-      .clients  .clients-content .client{
-        width: 90%;
-        margin-left: 3%;
-   }
-
-   .clients .clients-content p {
-    color: #2c3855;
-    font-size: 18px;
-    margin-top: 15%;
-  }
-  
-    }
-
-
 @media (min-width: 769px) and (max-width: 992px) {
   .clients  .clients-content{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(40,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(350,1fr));
     gap: 40px;
     width: 50%;
 
@@ -560,7 +539,7 @@ footer{
 footer .footer{
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
   gap: 30px;
 ;}
 
@@ -618,6 +597,7 @@ footer .footer .colum {
 
 footer{
   width: 100%;
+  margin: 0;
 }
 
 footer .footer{
@@ -625,6 +605,7 @@ footer .footer{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
   gap: 30px;
+  margin: 0;
 ;} 
 
 .footer p{
