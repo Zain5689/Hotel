@@ -414,6 +414,8 @@ section .clients {
   background-color:#ffffff;
   height: 180px;
   position: relative;
+  transition: 0.5s;
+
 }
 
 .clients .clients-content img {
@@ -427,7 +429,7 @@ section .clients {
   top: -30px;
   left: 50%;
   transform: translatex(-50%);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .clients .clients-content p {
@@ -436,8 +438,8 @@ section .clients {
   margin-top: 15%;
 }
 
-.clients .clients-content img:hover{
-  transform: translate(5%);
+.clients .clients-content:hover img{
+  transform: translatey(1px);
 }
 
 
